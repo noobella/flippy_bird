@@ -9,6 +9,7 @@ public class BirdScript : MonoBehaviour
 
 
     public Rigidbody2D rigidBody;
+    public ParticleSystem particleSystem;
     public float flapStrength;
     public LogicScript logicScript;
     public bool isAlive = true;
@@ -53,7 +54,10 @@ public class BirdScript : MonoBehaviour
     private void GameOver()
     {
         isAlive = false;
+        particleSystem.Play();
+        // transform.rotation = new Quaternion(0, 0, 90F, 0);
         logicScript.GameOver();
+        gameObject.SetActive(false);
     }
 
 }

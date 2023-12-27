@@ -998,6 +998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 2501388267187507855, guid: a2ec2975fbe682e42b0c10f6964fab4c, type: 3}
+  movingPipe: {fileID: 2501388267187507855, guid: 0c7f8b0c6da5b0d44adec6d531fb372f, type: 3}
   spawnRate: 4
 --- !u!4 &1622783795
 Transform:
@@ -1040,7 +1041,7 @@ Transform:
   m_GameObject: {fileID: 1865044870}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.14, y: -0.37, z: 0}
+  m_LocalPosition: {x: -3, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
