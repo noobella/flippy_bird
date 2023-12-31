@@ -29,6 +29,26 @@ public class LogicScript : MonoBehaviour
     public void GameOver()
     {
         gameOver.SetActive(true);
+        if(CheckIfHighScore())
+        {
+            PlayerPrefs.SetFloat("highscore", score);
+        }
+    }
+
+    public bool CheckIfHighScore()
+    {
+        if(PlayerPrefs.HasKey("highscore"))
+        {
+            float highScore = PlayerPrefs.GetFloat("highscore");
+            if(highScore < score)
+            {
+                return true;
+            }
+        } else
+        {
+            return true;
+        }
+        return false;
     }
 
 
